@@ -1,3 +1,5 @@
 {
+  "doom-one.nvim": { "branch": "main", "commit": "2d910b0c10efb2417871157b42875832a4c626f5" },
+  "kanso.nvim": { "branch": "main", "commit": "f67db8dca6d7b5d270188023f129211856d2991c" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" }
 }

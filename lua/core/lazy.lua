@@ -25,7 +25,7 @@ require("lazy").setup({
   -- Install
   install = {
     missing = true, -- Auto-install missing plugins
-    colorscheme = { "" }, -- Theme
+    colorscheme = { require("plugins.colorscheme").theme }, -- Theme
   },
   -- Update detection
   checker = {
