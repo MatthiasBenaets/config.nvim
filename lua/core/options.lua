@@ -15,6 +15,7 @@ opt.signcolumn = "yes"
 opt.scrolloff = 10
 opt.sidescrolloff = 20
 opt.termguicolors = true
+opt.pumheight = 15
 
 -- Formatting
 opt.wrap = false
