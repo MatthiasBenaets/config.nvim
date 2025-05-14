@@ -40,10 +40,24 @@ return {
       }),
       -- Suggestion sources
       sources = cmp.config.sources({
+        { name = "nvim_lsp" }, -- LSP
         { name = "luasnip" }, -- Snippets
         { name = "buffer" }, -- Text in buffer
         { name = "path" }, -- File path
       }),
+      -- Labels
+      formatting = {
+        format = function(entry, vim_item)
+          local source_names = {
+            nvim_lsp = "[LSP]",
+            luasnip = "[SNIP]",
+            buffer = "[BUF]",
+            path = "[PATH]",
+          }
+          vim_item.menu = source_names[entry.source.name] or ""
+          return vim_item
+        end,
+      },
     })
   end,
 }
