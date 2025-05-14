@@ -31,6 +31,10 @@ set("n", "<ESC>", "<CMD>nohlsearch<CR>") -- clear highlighting
 set("n", "n", "nzzzv", opts) -- centers cursor
 set("n", "N", "Nzzzv", opts) -- centers cursor
 
+-- Comment
+set("n", "<C-/>", "<CMD>normal gcc<CR>", opts) -- line
+set("v", "<C-/>", "<CMD>normal gc<CR>", opts) -- block
+
 -- Insert mode
 set("i", "jk", "<ESC>", opts) -- exit
 
