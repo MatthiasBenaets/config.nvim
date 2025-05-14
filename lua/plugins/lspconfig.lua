@@ -49,6 +49,11 @@ return {
         capabilities = capabilities,
         settings = {
           ["nil"] = {
+            nix = {
+              flake = {
+                autoArchive = true,
+              },
+            },
             formatting = {
               command = { "nixpkgs-fmt" },
             },
