@@ -33,3 +33,6 @@ set("n", "N", "Nzzzv", opts) -- centers cursor
 
 -- Insert mode
 set("i", "jk", "<ESC>", opts) -- exit
+
+-- Visual mode
+set("n", "<TAB>", "z=", opts) -- spell suggestion
