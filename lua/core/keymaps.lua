@@ -37,6 +37,3 @@ set("v", "<C-/>", "<CMD>normal gc<CR>", opts) -- block
 
 -- Insert mode
 set("i", "jk", "<ESC>", opts) -- exit
-
--- Visual mode
-set("n", "<TAB>", "z=", opts) -- spell suggestion

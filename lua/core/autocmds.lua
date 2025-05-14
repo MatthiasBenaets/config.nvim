@@ -8,7 +8,10 @@ autocmd({ "BufWritePre" }, {
 -- enable spellchecking
 autocmd({ "FileType" }, {
   pattern = { "markdown" },
-  command = "setlocal spell spelllang=en,nl",
+  callback = function()
+    vim.cmd("setlocal spell spelllang=en,nl")
+    vim.keymap.set("n", "<TAB>", "z=", { noremap = true, silent = true, buffer = true })
+  end,
 })
 
 -- open file at last position
